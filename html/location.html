@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
+</script>
+
+<script>
+function initialize()
+{
+var mapProp = {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<style type="text/css">
+
+body {background-image:url('b2.jpg');background-repeat:repeat;
+}
+a {text-decoration:none;color:white}
+  
+
+a {text-decoration:none;color:white}
+a:link {color:yellow;}  
+a:visited {color:green;}
+a:hover {color:blue;}   
+a:active {color:red;} 
+</style>
+</head>
+
+<body>
+
+<table width="1358px" border="0">
+<tr >
+<td colspan="3" >
+
+<div id="header" style="background-color:grey;margin-left:350px;margin-right:350px;" >
+<h1 align="left"  ><font color="white" size="5" face="Comic Sans MS" >Our Stores</font><br>
+<font color="white" size="3" face="Comic Sans MS" >Find your neighborhood Engineers' Archive Books location.  </font></h1></div>
+
+</td></tr>
+<tr >
+
+<td  align="left"><p><font color="white" size="3" face="Comic Sans MS" >
+<dl>
+  <dt><font color="white" size="5" face="Comic Sans MS">How It Works</font></dt>
+    <dd>
+	<ol>
+       <li>Bring in your used books next time you shop at Engineer's Archive.</li>
+       <li>We will make you an offer on everthing you bring in.</li>
+	   <li>Then take the cash and buy yourself something new.</li>
+    </ol>
+	</dd>
+  </dt>
+  
+  <dt><font color="white" size="5" face="Comic Sans MS">But there are some conditions applied</font></dt>
+    <dd>
+	<ul>
+		<dl>
+          <dt>
+		  
+	        We pay the most for recent bestsellers and collectibles, but we're also interested in good books. <br>
+			The primary factors we consider when buying used merchandise of any kind are:  </dt>
+		
+      <dd> <li>condition</li>
+       <li>supply and demand</li>
+	 	</dd>
+  </dt>
+    </ul>
+	</dd>
+  </dt>
+ 
+</p></font>
+</td>
+
+
+<td>
+<div id="googleMap" style="width:650px;height:350px;" ></div>
+</td>
+</tr>
+</table>
+
+
+
+</body>
+</html>
